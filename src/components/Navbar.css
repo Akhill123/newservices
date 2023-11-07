@@ -1,0 +1,43 @@
+/* Navbar styles */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px;
+  border-bottom: 2px solid rgb(216, 216, 216);
+  z-index: 999; /* Optional: Use a high z-index to ensure the navbar appears above other content. */
+}
+  
+  /* Navbar links styles */
+  .navbar-links a {
+    text-decoration: none;
+    color: rgb(16, 16, 80);
+    padding: 5px 15px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+    transition: background-color 0.3s;
+    margin-right: 10px;
+    font-weight: bold;
+
+  }
+  
+  .navbar-links a:hover {
+    color: rgb(1, 104, 207);
+  }
+  .navbar-links a:last-child {
+    margin-right: 0;
+  }
+  /* Navbar icon styles */
+  .navbar-icon {
+  
+    width: 150px; /* Adjust the size as needed */
+    height: 50px;
+    margin-right: 20px;
+ 
+  }
+  
