@@ -1,100 +1,87 @@
-import React from "react"
-import { blog } from "../../../dummydata"
-import "./footer.css"
+import React, { useState } from "react";
+import "./footer.css";
 
 const Footer = () => {
+  const [popupVisible, setPopupVisible] = useState(false);
+
+  const togglePopup = () => {
+    setPopupVisible(!popupVisible);
+  };
+
   return (
     <>
-      <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
-            <h1>Newsletter - Stay tune and get the latest update</h1>
+      <section className="newletter1">
+        <div className="container flexSB">
+          <div className="left row">
+            <h1>Newsletter - Stay With Us Get Latest Updates</h1>
             <span>Far far away, behind the word mountains</span>
           </div>
-          <div className='right row'>
-            <input type='text' placeholder='Enter email address' />
-            <i className='fa fa-paper-plane'></i>
+          <div className="right row">
+            <input type="text" placeholder="Enter email address" />
+            <i className="fa fa-paper-plane"></i>
           </div>
         </div>
       </section>
-      <footer>
-        <div className='container padding'>
-          <div className='box logo'>
-            <h1>ACADEMIA</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-
-            <i className='fab fa-facebook-f icon'></i>
-            <i className='fab fa-twitter icon'></i>
-            <i className='fab fa-instagram icon'></i>
-          </div>
-          <div className='box link'>
-            <h3>Explore</h3>
-            <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
-            </ul>
-          </div>
-          <div className='box link'>
-            <h3>Quick Links</h3>
-            <ul>
-              <li>Contact Us</li>
-              <li>Pricing</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
-            </ul>
-          </div>
-          <div className='box'>
-            <h3>Recent Post</h3>
-            {blog.slice(0, 3).map((val) => (
-              <div className='items flexSB'>
-                <div className='img'>
-                  <img src={val.cover} alt='' />
-                </div>
-                <div className='text'>
-                  <span>
-                    <i className='fa fa-calendar-alt'></i>
-                    <label htmlFor=''>{val.date}</label>
-                  </span>
-                  <span>
-                    <i className='fa fa-user'></i>
-                    <label htmlFor=''>{val.type}</label>
-                  </span>
-                  <h4>{val.title.slice(0, 40)}...</h4>
-                </div>
-              </div>
-            ))}
-          </div>
-          <div className='box last'>
-            <h3>Have a Questions?</h3>
-            <ul>
-              <li>
-                <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
-              </li>
-              <li>
-                <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
-              </li>
-              <li>
-                <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
-              </li>
-            </ul>
+      <footer className="footer">
+        <div className="container">
+          <div className="footer-content">
+            <div className="top-categories">
+              <h2 className="hey">Top Categories</h2>
+              <button>Home Cleaning</button>
+              <button>Appliance Repair</button>
+              <button>Computer Repair</button>
+              <button>Invertors & Batteries</button>
+              <button onClick={togglePopup}>OTHERS</button>
+            </div>
+            <div className="social-media">
+              <h2 className="hey">Follow Us</h2>
+              <a href="#">Facebook</a> <a href="#">Twitter</a>
+              <a href="#">Facebook</a> <a href="#">Twitter</a>
+              <a href="#">Facebook</a> <a href="#">Twitter</a>
+            </div>
+            <div className="quick-links">
+              <h2 className="hey">Quick Links</h2>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+            </div>
+            <div className="address">
+              <h2 className="hey">Address</h2>
+              <p>Hola9 classifieds pvt ltd<br />6th Block Koramangala</p>
+            </div>
           </div>
         </div>
       </footer>
-      <div className='legal'>
-        <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
-        </p>
-      </div>
+      {popupVisible && (
+        <div className="popup">
+          <div className="popup-content">
+            <span className="close" onClick={togglePopup}>
+              &times;
+            </span>
+            <h2>Select City and Category</h2>
+            <div className="dropdowns">
+             <p>Select city</p>
+              <select id="city-dropdown">
+                <option value="city1">City 1</option>
+                <option value="city2">City 2</option>
+                {/* Add more city options as needed */}
+              </select>
+              <br />
+              <p>Select Category</p>
+              <select id="category-dropdown">
+                <option value="category1">Category 1</option>
+                <option value="category2">Category 2</option>
+                {/* Add more category options as needed */}
+              </select>
+              <br />
+              <button id="search-button">Search</button>
+            </div>
+          </div>
+        </div>
+      )}
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;

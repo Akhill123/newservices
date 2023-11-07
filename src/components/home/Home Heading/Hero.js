@@ -14,7 +14,7 @@ const Hero = () => {
               <button className='primary-btn'>
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
-              <button>
+              <button className='primary-btn'>
                 VIEW ALL SERVICES <i className='fa fa-long-arrow-alt-right'></i>
               </button>
             </div>
