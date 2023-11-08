@@ -67,12 +67,12 @@
 .online .box {
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
   background-color: #fff;
-  padding: 30px 20px;
+  padding: 20px 10px;
   transition: 0.5s;
 }
 .online .img {
-  width: 120px;
-  height: 120px;
+  width: 150px;
+  height: 150px;
   margin: auto;
   position: relative;
 }
@@ -99,7 +99,7 @@
   opacity: 0;
 }
 .online .box:hover {
-  background-color: #0362b1;
+  background-color: rgb(1, 86, 126);
   border-radius: 10px;
   cursor: pointer;
   color: white;

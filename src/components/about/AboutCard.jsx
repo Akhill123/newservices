@@ -3,17 +3,17 @@ import Heading from "../HomeSection/heading/Heading"
 import "./about.css"
 import { homeAbout } from "../../dummydata"
 import Awrapper from "./Awrapper"
-
+import plumber from "../../images/plumber.jpg"
 const AboutCard = () => {
   return (
     <>
       <section className='aboutHome'>
         <div className='container flexSB'>
           <div className='left row'>
-            <img src='./images/about.webp' alt='' />
+            <img src={plumber} alt='' />
           </div>
           <div className='right row'>
-            <Heading subtitle='GET ANYTHING' title='Benefits About Online Learning Expertise' />
+            <Heading subtitle='GET ANYTHING' title='Benefits Of Our Website' />
             <div className='items'>
               {homeAbout.map((val) => {
                 return (

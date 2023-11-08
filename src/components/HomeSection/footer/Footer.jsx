@@ -1,7 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,} from "react";
 import "./footer.css";
+import cityData from "./cityData"; 
+
+
+
 
 const Footer = () => {
+
   const [popupVisible, setPopupVisible] = useState(false);
 
   const togglePopup = () => {
@@ -31,7 +36,13 @@ const Footer = () => {
               <button>Appliance Repair</button>
               <button>Computer Repair</button>
               <button>Invertors & Batteries</button>
+
+
+
               <button onClick={togglePopup}>OTHERS</button>
+
+
+
             </div>
             <div className="social-media">
               <h2 className="hey">Follow Us</h2>
@@ -48,12 +59,18 @@ const Footer = () => {
             </div>
             <div className="address">
               <h2 className="hey">Address</h2>
+
+
+        
+
               <p>Hola9 classifieds pvt ltd<br />6th Block Koramangala</p>
             </div>
           </div>
         </div>
       </footer>
-      {popupVisible && (
+
+      {popupVisible && 
+        (
         <div className="popup">
           <div className="popup-content">
             <span className="close" onClick={togglePopup}>
@@ -62,11 +79,13 @@ const Footer = () => {
             <h2>Select City and Category</h2>
             <div className="dropdowns">
              <p>Select city</p>
-              <select id="city-dropdown">
-                <option value="city1">City 1</option>
-                <option value="city2">City 2</option>
-                {/* Add more city options as needed */}
-              </select>
+             <select id="city-dropdown">
+             {cityData.map((city, index) => (
+               <option key={index} value={city}>
+                 {city}
+               </option>
+             ))}
+           </select>
               <br />
               <p>Select Category</p>
               <select id="category-dropdown">
@@ -79,9 +98,11 @@ const Footer = () => {
             </div>
           </div>
         </div>
-      )}
+      )
+    }
     </>
   );
 };
 
 export default Footer;
+

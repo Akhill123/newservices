@@ -22,25 +22,25 @@ export const awrapper = [
   {
     cover:
       "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
-    data: "3,000",
+    data: "480+",
     title: "SUCCESS STORIES",
   },
 
   {
     cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
-    data: "320",
-    title: "TRUSTED TUTORS",
+    data: "350+",
+    title: "TRUSTED CUSTOMERS",
   },
   {
     cover:
       "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
-    data: "1,000",
-    title: "SCHEDULES",
+    data: "50+",
+    title: "CITIES",
   },
   {
     cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
-    data: "587",
-    title: "COURSES",
+    data: "60+",
+    title: "VENDORS",
   },
 ];
 export const coursesCard = [
@@ -186,56 +186,52 @@ export const online = [
     courseName: "Computer Repair",
   },
   {
-    cover: "./images/courses/online/o3.png",
-    hoverCover: "./images/courses/online/o3.1.png",
-    courseName: "Computer Science",
+    cover: "https://static.vecteezy.com/system/resources/previews/004/590/847/non_2x/clean-house-icon-home-wash-cleaning-house-simple-design-editable-design-template-vector.jpg",
+    hoverCover: "https://static.vecteezy.com/system/resources/previews/004/590/847/non_2x/clean-house-icon-home-wash-cleaning-house-simple-design-editable-design-template-vector.jpg",
+    courseName: "Home Cleaning",
   },
   {
-    cover: "./images/courses/online/o4.png",
-    hoverCover: "./images/courses/online/o4.1.png",
-    courseName: "History & Archeologic",
+    cover: "https://static.vecteezy.com/system/resources/previews/005/863/334/non_2x/home-office-icon-concept-man-working-on-computer-in-the-house-illustration-isolated-on-white-background-free-vector.jpg",
+    hoverCover: "https://static.vecteezy.com/system/resources/previews/005/863/334/non_2x/home-office-icon-concept-man-working-on-computer-in-the-house-illustration-isolated-on-white-background-free-vector.jpg",
+    courseName: "Home Help",
   },
   {
-    cover: "./images/courses/online/o5.png",
-    hoverCover: "./images/courses/online/o5.1.png",
-    courseName: "Software Engineering",
+    cover: "https://www.freeiconspng.com/uploads/home-repair-service-icon-32.jpg",
+    hoverCover: "https://www.freeiconspng.com/uploads/home-repair-service-icon-32.jpg",
+    courseName: "Home Repair",
   },
   {
-    cover: "./images/courses/online/o6.png",
-    hoverCover: "./images/courses/online/o6.1.png",
-    courseName: "Information Software",
+    cover: "https://img.freepik.com/premium-photo/interior-design-with-living-room-black-line-sketch-with-shadows-white-texture-paper-illustration_263512-1760.jpg?w=2000",
+    hoverCover: "https://img.freepik.com/premium-photo/interior-design-with-living-room-black-line-sketch-with-shadows-white-texture-paper-illustration_263512-1760.jpg?w=2000",
+    courseName: "Interior Designing",
   },
   {
-    cover: "./images/courses/online/o7.png",
-    hoverCover: "./images/courses/online/o7.1.png",
-    courseName: "Health & Fitness",
-    course: "10 Courses",
+    cover: "https://static.vecteezy.com/system/resources/previews/025/086/527/non_2x/inverter-battery-icon-in-gray-and-white-color-vector.jpg",
+    hoverCover: "https://static.vecteezy.com/system/resources/previews/025/086/527/non_2x/inverter-battery-icon-in-gray-and-white-color-vector.jpg",
+    courseName: "Invertor & Batteries",
+
   },
   {
-    cover: "./images/courses/online/o8.png",
-    hoverCover: "./images/courses/online/o8.1.png",
-    courseName: "Marketing",
+    cover: "https://media.istockphoto.com/id/1401398136/vector/kettle-on-gas-stove-sketch-vector.jpg?s=612x612&w=0&k=20&c=sr8dcccIkpFZkCvOVML5oidDjMJIwHJd4dH3RyxZkic=",
+    hoverCover: "https://media.istockphoto.com/id/1401398136/vector/kettle-on-gas-stove-sketch-vector.jpg?s=612x612&w=0&k=20&c=sr8dcccIkpFZkCvOVML5oidDjMJIwHJd4dH3RyxZkic=",
+    courseName: "Kitchen Applience Repair ",
   },
   {
-    cover: "./images/courses/online/o9.png",
-    hoverCover: "./images/courses/online/o9.1.png",
-    courseName: "Graphic Design",
+    cover: "https://img.freepik.com/premium-vector/mobile-phone-repair-shop-disassembly-information-cell-phones-service-guide-wrench-icon-vector-illustration_642540-114.jpg?w=2000",
+    hoverCover: "https://img.freepik.com/premium-vector/mobile-phone-repair-shop-disassembly-information-cell-phones-service-guide-wrench-icon-vector-illustration_642540-114.jpg?w=2000",
+    courseName: "Mobile & Tablet Repair",
   },
   {
-    cover: "./images/courses/online/o10.png",
-    hoverCover: "./images/courses/online/o10.1.png",
-    courseName: "Music",
+    cover: "https://www.clipartkey.com/mpngs/m/140-1407042_movers-and-packers-icon.png",
+    hoverCover: "https://www.clipartkey.com/mpngs/m/140-1407042_movers-and-packers-icon.png",
+    courseName: "Packers & Movers",
   },
   {
-    cover: "./images/courses/online/o11.png",
-    hoverCover: "./images/courses/online/o11.1.png",
-    courseName: "Business Administration",
+    cover: "https://img.freepik.com/premium-vector/pest-control-icon-set-silhouettes-about-fight-against-cockroaches_703715-179.jpg?w=2000",
+    hoverCover: "https://img.freepik.com/premium-vector/pest-control-icon-set-silhouettes-about-fight-against-cockroaches_703715-179.jpg?w=2000",
+    courseName: "Pest Control",
   },
-  {
-    cover: "./images/courses/online/o12.png",
-    hoverCover: "./images/courses/online/o12.1.png",
-    courseName: "Web Management",
-  },
+
 ];
 export const team = [
   {

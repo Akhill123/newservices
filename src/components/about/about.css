@@ -47,15 +47,15 @@
 }
 /*----------awrapper------------*/
 .awrapper {
-  background-image: url("../../../public/images/awrapper.webp");
+  background-image: url("https://img.freepik.com/free-photo/two-businessmen-shaking-hands-successful-business-agreement-generated-by-artificial-intelligence_188544-93872.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  height: 30vh;
+  height: 50vh;
   color: #fff;
 }
 .awrapper .box {
-  padding: 70px 0;
+  padding: 110px 0;
 }
 .awrapper img {
   margin-right: 30px;
